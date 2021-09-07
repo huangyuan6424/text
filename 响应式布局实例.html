@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         #div0{
+             width: 100%;
+             height: 500px;
+         }
+         /* 第一行三个div */
+         @media  screen and (min-device-width:100px ) and (max-device-width:200px) {
+             #div0 div{
+                 width: 33.3%;
+
+             }
+             #div0 div:nth-child(1){
+                 background: #000;
+             }
+             #div0 div:nth-child(2){
+                 background:red;
+             }
+             #div0 div:nth-child(3){
+                 background: blue;
+             }
+             
+         }
+         /* 第二行三个div  */
+         @media  screen and (min-device-width:200px ) and (max-device-width:00px) {
+             #div0 div{
+                 width: 33.3%;
+
+             }
+             #div0 div:nth-child(1){
+                 background: #000;
+             }
+             #div0 div:nth-child(2){
+                 background:red;
+             }
+             #div0 div:nth-child(3){
+                 background: blue;
+             }
+             
+         }
+     </style>
+ </head>
+ <body>
+     <!-- 
+         实现一行三个盒子  浏览器宽度变长后一行两个盒子，一个盒子在下面
+      -->
+      <div id="div0">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+ </body>
+ </html>
