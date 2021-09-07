@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form method="GET"  action="save.php" >
+       姓名：<input type="text" name="myname" value="请输入姓名" >
+       <br>
+       密码：<input type="password" name="pass" value="请输入密码">
+       <br>
+      信息：<input type="text" name="myname" placeholder="请输入信息">
+    <br>
+    数字：<input type="number" name="number" placeholder="只能输入数字">
+    <br>
+    网址：<input type="url" name="\" placeholder="只能输入网址">
+    <br>
+    <label for="email">输入你的邮箱地址:</label>
+    <input type="email" id="email" placeholder="只能输入邮箱">
+    <br>
+    <br>
+    <label>联系我们</label>
+    <textarea cols="50" rows="10">在这里输入内容</textarea>
+    <br>
+    <input type="submit" value="提交" name="submitBtn">
+    <input type="reset" value="重置" name=" restBtn">
+       </form>
+       <form method="GET"  action="save.php" >
+           请选择性别：<br>
+           <input type="radio" name="radiosex" value="男" checked="checked">男  
+           <input type="radio" name="radiosex" value="女" >女
+
+       </form>
+       <form method="GET"  action="save.php" >
+        请选择性别：<br>
+        <input type="checkbox" name="radiosex" value="男" checked="checked">男  
+        <input type="checkbox" name="radiosex" value="女" >女
+
+    </form>
+    <form method="GET"  action="save.php" >
+      <select>
+          <option value="读书">读书</option>
+          <option value="运动">运动</option>
+          <option value="音乐">音乐</option>
+          <option value="旅游" selected="selected">旅游</option>
+      </select>
+
+    </form>
+
+</body>
+</html>
