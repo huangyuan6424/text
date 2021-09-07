@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    box-sizing: border-box;
+
+        }
+        .out::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+ .header,.footer{
+     padding: 15px;
+    
+     color: white;
+     
+     height: 50px;
+     background:#ccc;
+ }
+ .both{
+     float: left;
+    padding: 15px;
+ }
+ .menu{
+     width: 15%;
+     height: 20px;
+
+ }
+ .right{
+     width: 75%;
+ }
+ 
+ ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+     
+ }
+ li{
+
+     margin: 5px;
+     background: blue;
+  
+     text-align: center;
+     color: white;
+     
+ }
+ .out{
+     margin: 20px;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        标题
+    </div>
+    <div class="out">
+        <div class="both menu">
+            <ul>
+                <li>蔬菜</li>
+                <li>水果</li>
+                <li>零食</li>
+                <li>肉肉</li>
+            </ul>
+        </div>
+        <div class="both right">
+         <p>  好看看看好看看看好看看看好看看看好看看看好看看看好看看看 好看看看           好看看看           好看看看  </p> 
+              <p>  好看看看           好看看看           好看看看           好看看看></p>
+        </div>
+    </div>
+    <div class="footer">
+  结束了
+    </div>
+</body>
+</html>
