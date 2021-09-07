@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 创建等宽的盒子 -->
+    <style>
+*{box-sizing: border-box;}
+.box{
+    width: 30.3%;
+    padding: 50px;
+    float: left;
+    margin: 20px;
+}
+.out-box::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+    </style>
+</head>
+<body>
+ <div class="out-box">
+     <div class="box" style="background-color: #ccc;">
+        文本一
+         <!-- 文本一  文本一  文本一  文本一 文本一 文本一 
+         文本一  文本一  文本一  文本一 文本一 文本一 -->
+     </div>
+     <div class="box" style="background-color: #bbb;">
+         文本二
+     </div>
+     <div class="box" style="background-color: #ddd;">
+         文本三
+     </div>
+ </div>   
+</body>
+</html>
